@@ -120,7 +120,7 @@ align-items: center;
   }
 
 .cards-container .card{
-    width: 380px;
+    width: calc(var(--size-9)*24);
     background-color: #fff;
     border: 0.0625rem solid #000;
     border-radius: var(--size-3);
@@ -136,7 +136,7 @@ align-items: center;
 }
 
 .card-img{
-    height: 300px;
+    height: calc(var(--size-9)*19);
 }
 
 .dflex.card-action-btns{
