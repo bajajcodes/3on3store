@@ -37,7 +37,6 @@ body {
 
 .beautify-aside {
     z-index: 5;
-    background-color: rgba(255, 253, 253, 0.986);
     background-color: var(--aside-beautify-color);
     min-height: 100vh;
 }
