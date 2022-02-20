@@ -6,15 +6,21 @@ body{
                                         "nav"
                                         "footer";
     grid-template-rows: auto 1fr auto auto;
+    background-color: var(--grey-color);
 }
 
+/* header */
+.header{
+    background-color: var(--white);
+}
 
 /* card-container with fixed height */
 .cards-container{
     min-height: max-content;
     max-height: 80vh;
-    overflow-y: scroll;
+    overflow-y: scroll; 
     overflow-x: hidden;
+    padding: var(--size-13) var(--size-10);
 }
 
 .card-w-100{
@@ -27,10 +33,12 @@ body{
 
 /* aside: cart placed at bottom by default */
 .aside{
-    padding: 40px 16px 40px 16px;
+    padding: var(--size-9);
     background-color: var(--white);
     border-right: 0;
-    margin-right: 10px;
+    margin-right: var(--size-6);
+    height: max-content;
+    background: var(--grey-color);
 }
 
 .aside .card-filter-category{
@@ -42,6 +50,9 @@ body{
 
 .aside-navbar{
     transform: translateX(0);
+    padding: 0;
+    padding-bottom: 10px;
+    border: 1px solid;
 }
 
 /* aside-navabr cart-items */
@@ -49,8 +60,12 @@ body{
     display: flex;
     align-items: center;
     column-gap: var(--size-6);
-    min-width: 60%;
-    max-width: max-content;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.aside-navbar .card-w-100 .btn-secondary{
+    margin: 0 var(--size-6);
 }
 
 /* expanding the buttons into column direction*/
@@ -58,7 +73,7 @@ body{
 .btn-secondary.align-center-and-space-between{
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 10px;
+    row-gap: var(--size-6);
 }
 
 .card-action-btns.align-center-and-space-between > button{
@@ -74,6 +89,10 @@ body{
             "footer footer footer";
         grid-template-columns: 1fr 4fr 2fr;
         grid-template-rows: auto 1fr auto;
+    }
+
+    .aside{
+        padding: calc(var(--size-16) * 1.3) 0 0 0;
     }
 
     .cards-container {
