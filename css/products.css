@@ -115,12 +115,11 @@ align-items: center;
 .cards-container {
     margin: 2em;
     display: grid;
-    row-gap: var(--size-11);
-    grid-template-columns: repeat(auto-fill,minmax(380px, 1fr));
+    row-gap: var(--size-15);
+    grid-template-columns: repeat(auto-fill,minmax(320px, 1fr));
   }
 
 .cards-container .card{
-    width: calc(var(--size-9)*24);
     background-color: #fff;
     border: 0.0625rem solid #000;
     border-radius: var(--size-3);
@@ -136,11 +135,12 @@ align-items: center;
 }
 
 .card-img{
-    height: calc(var(--size-9)*19);
+    height: calc(var(--size-9)*13);
 }
 
 .dflex.card-action-btns{
     width: 100%;
+    row-gap: var(--size-11);
 }
 
 .card-price {
@@ -158,6 +158,15 @@ align-items: center;
 
 .btn.btn-outline-secondary{
     border: 0.0625rem solid var(--black);
+}
+
+/* make card footer buttons full-width */
+.btn{
+    width: 100%;
+}
+
+.btn.dflex{
+    justify-content: center;
 }
 
 /* footer */
