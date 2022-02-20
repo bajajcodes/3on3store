@@ -1,5 +1,5 @@
 /* single-column layout */
-body {
+.body-wrapper {
     display: grid;
     grid-template-areas: "header"
         "nav"
@@ -47,7 +47,6 @@ body {
     border: 0;
     font-size: var(--size-10);
     cursor: pointer;
-    /* transition: transform 560ms; */
     position: absolute;
     top: 0;
     right: 20px;
@@ -171,7 +170,7 @@ align-items: center;
 @media (min-width:768px) {
 
     /* three-column layout */
-    body {
+    .body-wrapper {
         grid-template-areas: "header header header"
             "nav main main"
             "footer footer footer";
