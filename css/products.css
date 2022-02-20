@@ -47,7 +47,6 @@ body {
     border: 0;
     font-size: var(--size-10);
     cursor: pointer;
-    /* transition: transform 560ms; */
     position: absolute;
     top: 0;
     right: 20px;
