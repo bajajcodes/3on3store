@@ -50,7 +50,7 @@ body {
     /* transition: transform 560ms; */
     position: absolute;
     top: 0;
-    right: 0;
+    right: 20px;
 }
 
 .aside-hamburger .material-icons {
