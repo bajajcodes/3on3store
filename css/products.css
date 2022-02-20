@@ -1,4 +1,5 @@
 /* single-column layout */
+
 .body-wrapper {
     display: grid;
     grid-template-areas: "header"
@@ -37,7 +38,6 @@
 
 .beautify-aside {
     z-index: 5;
-    background-color: rgba(255, 253, 253, 0.986);
     background-color: var(--aside-beautify-color);
     min-height: 100vh;
 }
@@ -120,7 +120,7 @@ align-items: center;
   }
 
 .cards-container .card{
-    width: 380px;
+    width: calc(var(--size-9)*24);
     background-color: #fff;
     border: 0.0625rem solid #000;
     border-radius: var(--size-3);
@@ -136,7 +136,7 @@ align-items: center;
 }
 
 .card-img{
-    height: 300px;
+    height: calc(var(--size-9)*19);
 }
 
 .dflex.card-action-btns{
